@@ -40,6 +40,14 @@
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

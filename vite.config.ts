@@ -14,7 +14,7 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: resolve(__dirname, "lib/main.ts"),
-      formats: ["es"],
+      formats: ["es", "umd"],
     },
     rollupOptions: {
       external: ["react", "react/jsx-runtime", "react-dom", "tailwindcss"],
@@ -46,5 +46,4 @@ export default defineConfig({
       plugins: [tailwindcss],
     },
   },
-  
 });
