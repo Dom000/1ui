@@ -28,9 +28,6 @@
     "url": "https://github.com/Dom000/1ui/issues"
   },
   "homepage": "https://github.com/your-username/your-library-name#readme",
-  "sideEffects": [
-    "**/*.css"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
@@ -39,13 +36,6 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/main.d.ts",
-      "import": "./dist/main.es.js",
-    },
-    "./dist/style.css": "./dist/style.css"
   },
   "peerDependencies": {
     "react": "^18.2.0",
