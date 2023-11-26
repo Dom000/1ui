@@ -44,7 +44,6 @@
     ".": {
       "types": "./dist/main.d.ts",
       "import": "./dist/main.es.js",
-      "require": "./dist/main.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
