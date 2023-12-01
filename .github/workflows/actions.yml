@@ -1,5 +1,5 @@
 
-name: 'Main Workflow'
+name: 'Chromatic Deployment'
 
 on: push
 
@@ -23,6 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
 
+name: Publish Package to npmjs
 on:
   release:
     types: [published]
