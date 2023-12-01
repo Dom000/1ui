@@ -1,7 +1,7 @@
 <img width="500" alt="ViteReactComponentLibrary" src="https://github.com/receter/my-component-library/assets/2504695/dbb53036-d228-477b-8cf8-f61cd6130776">
 
-# A simple (demo) react component library
-This repository was published together with an article on [how to create a react component library](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma) using Vite's library mode.
+# A react component library
+1ui is a Component library that extends the styling of web components [web audio,video etc...] and there apis, to produce a more apealing and good looking, 100% customizable and ready-made components
 
 Here is another repo that consumes this libarary: https://github.com/receter/my-component-library-consumer
 
