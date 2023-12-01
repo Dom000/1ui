@@ -239,9 +239,9 @@ export function Audio({
   };
   return (
     <div>
-      <div className={`${className}  ${styles.mainDivStyle}`} {...mainDivProps}>
+      <div className={`${styles.mainDivStyle} ${className} `} {...mainDivProps}>
         <div
-          className={`${controlDivClass} ${styles.controlDiv}`}
+          className={`${styles.controlDiv} ${controlDivClass}`}
           {...controlDivProps}
           onClick={handleTogglePlayPause}
         >
@@ -251,11 +251,11 @@ export function Audio({
         <div
           ref={myDivRef}
           onMouseMoveCapture={handleSeek}
-          className={`${waveDivClass}  ${styles.waveDiv}`}
+          className={`${styles.waveDiv} ${waveDivClass}`}
           {...waveDivProps}
         >
           <span
-            className={`${seekBoxClass} ${styles.animate}  `}
+            className={`${styles.animate} ${seekBoxClass} `}
             style={{
               borderRadius: 5,
               height: 10,
@@ -302,7 +302,7 @@ export function Audio({
         >
           <span
             onClick={handlePlayBackRate}
-            className={`${speedBoxClass}  ${styles.playbackBox}`}
+            className={`${styles.playbackBox} ${speedBoxClass}`}
             {...speedProps}
           >
             {`${playbackRate}x`}
