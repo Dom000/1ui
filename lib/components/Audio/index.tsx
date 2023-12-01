@@ -249,6 +249,7 @@ export function Audio({
         </div>
 
         <div
+          // onTouchStart={handleSwipe}
           ref={myDivRef}
           onMouseMoveCapture={handleSeek}
           className={`${styles.waveDiv} ${waveDivClass}`}
