@@ -1,46 +1,47 @@
 import { useEffect, useRef, useState } from "react";
 import { PauseIcon, PlayIcon } from "./Icon";
-import { css } from "@emotion/css";
+// import { css } from "@emotion/css";
+import styles from "./styles.module.css";
 
-const mainDivStyle: React.CSSProperties = {
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: 6,
-  borderRadius: 5,
-  background: "#393636",
-  width: "fit",
-};
+// const mainDivStyle: React.CSSProperties = {
+//   display: "flex",
+//   flexDirection: "row",
+//   justifyContent: "center",
+//   alignItems: "center",
+//   padding: 6,
+//   borderRadius: 5,
+//   background: "#393636",
+//   width: "fit",
+// };
 
-const controlDiv: React.CSSProperties = {
-  width: 40,
-  height: 40,
-  borderRadius: 50,
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  cursor: "pointer",
-  alignItems: "center",
-  background: "#fff",
-};
-const waveDiv: React.CSSProperties = {
-  maxWidth: 200,
-  padding: 2,
-  gap: 1,
-  display: "flex",
-  alignItems: "center",
-  position: "relative",
-};
+// const controlDiv: React.CSSProperties = {
+//   width: 40,
+//   height: 40,
+//   borderRadius: 50,
+//   display: "flex",
+//   flexDirection: "row",
+//   justifyContent: "center",
+//   cursor: "pointer",
+//   alignItems: "center",
+//   background: "#fff",
+// };
+// const waveDiv: React.CSSProperties = {
+//   maxWidth: 200,
+//   padding: 2,
+//   gap: 1,
+//   display: "flex",
+//   alignItems: "center",
+//   position: "relative",
+// };
 
-const playbackBox: React.CSSProperties = {
-  fontSize: 10,
-  color: "#d8d8d8",
-  cursor: "pointer",
-  borderRadius: 10,
-  padding: "3px 10px",
-  background: "#5e5a5a",
-};
+// const playbackBox: React.CSSProperties = {
+//   fontSize: 10,
+//   color: "#d8d8d8",
+//   cursor: "pointer",
+//   borderRadius: 10,
+//   padding: "3px 10px",
+//   background: "#5e5a5a",
+// };
 
 export function Audio({
   audioSrc,
@@ -238,14 +239,9 @@ export function Audio({
   };
   return (
     <div>
-      <div
-        className={`${className}  ${css({
-          ...mainDivStyle,
-        })} space-x-1.5 md:space-x-3`}
-        {...mainDivProps}
-      >
+      <div className={`${className}  ${styles.mainDivStyle}`} {...mainDivProps}>
         <div
-          className={`${controlDivClass} ${css({ ...controlDiv })}`}
+          className={`${controlDivClass} ${styles.controlDiv}`}
           {...controlDivProps}
           onClick={handleTogglePlayPause}
         >
@@ -255,15 +251,11 @@ export function Audio({
         <div
           ref={myDivRef}
           onMouseMoveCapture={handleSeek}
-          className={`${waveDivClass} ${css({
-            ...waveDiv,
-          })} w-[100px] md:w-[200px] h-[16px] md:h-[16px] `}
+          className={`${waveDivClass}  ${styles.waveDiv}`}
           {...waveDivProps}
         >
           <span
-            className={`${seekBoxClass} ${css`
-              transition: position 0.3s, height 0.3s, background-color 1s;
-            `}  `}
+            className={`${seekBoxClass} ${styles.animate}  `}
             style={{
               borderRadius: 5,
               height: 10,
@@ -280,9 +272,7 @@ export function Audio({
           {waves_.map((_, index) => {
             return (
               <div
-                className={` ${css`
-                  transition: width 0.3s, height 0.3s, background-color 1s;
-                `}`}
+                className={` ${styles.animate}`}
                 key={index}
                 style={{
                   width: 2,
@@ -312,7 +302,7 @@ export function Audio({
         >
           <span
             onClick={handlePlayBackRate}
-            className={`${speedBoxClass}  ${css({ ...playbackBox })}`}
+            className={`${speedBoxClass}  ${styles.playbackBox}`}
             {...speedProps}
           >
             {`${playbackRate}x`}

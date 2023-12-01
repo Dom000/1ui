@@ -1,0 +1,56 @@
+.mainDivStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 5px;
+  background: #393636;
+  width: fit-content;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .mainDivStyle {
+    gap: 10px;
+  }
+
+  .waveDiv {
+    width: 200px;
+  }
+}
+.controlDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  background: #fff;
+}
+
+.waveDiv {
+  max-width: 200px;
+  padding: 2px;
+  gap: 1px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 16px;
+  transition: position 0.3s, height 0.3s, width 0.3s, background-color 1s;
+}
+
+.playbackBox {
+  font-size: 10px;
+  color: #d8d8d8;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 3px 10px;
+  background: #5e5a5a;
+}
+
+.animate{
+    transition: width 0.3s, height 0.3s, background-color 1s
+}

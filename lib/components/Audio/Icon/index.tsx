@@ -1,9 +1,9 @@
 export function PlayIcon({ fill }: { fill?: string }) {
   return (
     <svg
-      stroke="currentColor"
-      fill={fill !== undefined ? fill : "currentColor"}
-      stroke-width="0"
+      stroke="#000"
+      fill={fill !== undefined ? fill : "#000"}
+      strokeWidth="0"
       viewBox="0 0 448 512"
       height="1em"
       width="1em"
@@ -16,9 +16,9 @@ export function PlayIcon({ fill }: { fill?: string }) {
 export function PauseIcon({ fill }: { fill?: string }) {
   return (
     <svg
-      stroke="currentColor"
-      fill={fill !== undefined ? fill : "currentColor"}
-      stroke-width="0"
+      stroke="#000"
+      fill={fill !== undefined ? fill : "#000"}
+      strokeWidth="0"
       viewBox="0 0 448 512"
       height="1em"
       width="1em"
