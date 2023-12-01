@@ -4,7 +4,7 @@
     "name": "Godknows Egi"
   },
   "private": false,
-  "version": "0.0.8",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -81,6 +81,5 @@
     "vite-plugin-lib-inject-css": "^1.3.0",
     "vitest": "^0.34.6"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "@dom000/1ui@0.0.8"
+  "readme": "ERROR: No README data found!"
 }
