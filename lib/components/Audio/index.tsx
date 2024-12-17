@@ -1,47 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { PauseIcon, PlayIcon } from "./Icon";
-// import { css } from "@emotion/css";
 import styles from "./styles.module.css";
 
-// const mainDivStyle: React.CSSProperties = {
-//   display: "flex",
-//   flexDirection: "row",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   padding: 6,
-//   borderRadius: 5,
-//   background: "#393636",
-//   width: "fit",
-// };
-
-// const controlDiv: React.CSSProperties = {
-//   width: 40,
-//   height: 40,
-//   borderRadius: 50,
-//   display: "flex",
-//   flexDirection: "row",
-//   justifyContent: "center",
-//   cursor: "pointer",
-//   alignItems: "center",
-//   background: "#fff",
-// };
-// const waveDiv: React.CSSProperties = {
-//   maxWidth: 200,
-//   padding: 2,
-//   gap: 1,
-//   display: "flex",
-//   alignItems: "center",
-//   position: "relative",
-// };
-
-// const playbackBox: React.CSSProperties = {
-//   fontSize: 10,
-//   color: "#d8d8d8",
-//   cursor: "pointer",
-//   borderRadius: 10,
-//   padding: "3px 10px",
-//   background: "#5e5a5a",
-// };
 
 export function Audio({
   audioSrc,
